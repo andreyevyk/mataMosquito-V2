@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+   <head>
+      <meta charset='utf-8'>
+      <title>Document</title>
+      <link rel="stylesheet" href="estilo.css">
+      <script src="jogo.js"></script>
+      
+   </head>
+
+   <body onresize="ajustaTamanhoPalcoJogo()">
+      <div class="pont"> 
+         Pontuação: <span id="pont"></span>
+      </div>
+
+
+
+      <div class="painel" id="painel">
+         <div class="vidas"> 
+            <img id="v1" src="img/coracao_cheio.png" alt="">
+            <img id="v2" src="img/coracao_cheio.png" alt="">
+            <img id="v3" src="img/coracao_cheio.png" alt="">
+
+         </div>
+
+         <div class="cronometro">
+            Cronometro:
+            <span id="cronometro"></span>
+         </div>
+      </div>
+
+      <script> 
+         document.getElementById('cronometro').innerHTML = tempo;
+         posicaoRandomica();
+         
+         var criarMosca = setInterval(function(){
+            console.log(criarMoscaTempo())
+            posicaoRandomica()
+         },criarMoscaTempo());
+      </script>
+   </body>
+
+</html>

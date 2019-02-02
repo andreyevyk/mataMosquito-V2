@@ -1,0 +1,62 @@
+html{
+   cursor: url(img/mata_mosca.png) 30 30,auto;
+}
+
+body{
+   overflow: hidden;
+   background-image: url(img/bg.jpg);
+   background-size: 100%;
+}
+.painel{
+   bottom: 0;
+   left: 0;
+   width: 190px;
+   padding: 10px;
+   background-color: #FFF;
+   border-top: 1px #fff;
+   opacity: 0.7;
+   position: absolute;
+}
+
+.pont{
+   top: 0;
+   left: 45%;
+   width: 150px;
+   padding: 10px;
+   background-color: #FFF;
+   border-top: 1px #fff;
+   opacity: 0.7;
+   position: absolute;
+   font-size: 20px;
+   font-weight: bold;
+}
+.cronometro{
+   float: left;   
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.vidas{
+   float: left;
+}
+
+.mosquito1{
+   height: 70px;
+   width: 70px;
+}
+.mosquito2{
+   height: 90px;
+   width: 90px;
+}
+.mosquito3{
+
+   height: 110px;
+   width: 110px;
+
+}
+.ladoA{
+   transform: scaleX(1);
+}
+.ladoB{
+   transform: scaleX(-1);
+}
